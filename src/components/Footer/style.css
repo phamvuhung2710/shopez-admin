@@ -1,0 +1,68 @@
+.footer {
+  height: 270px;
+  background-color: #d1d9d6;
+}
+
+.footer-text-container {
+  display: inline-block;
+  text-align: left;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.footer-text::before {
+  content: "";
+  background: #ff8b2d;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-text:hover {
+  /* color: #ff8b2d;
+  text-decoration-line: underline;
+  cursor: pointer; */
+  background-position: 0;
+  cursor: pointer;
+  color: #ff8b2d;
+}
+
+.footer-text:hover::before {
+  width: 100%;
+}
+
+.footer-container {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-title {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-email-line {
+  padding-top: 7px;
+  border-bottom: 1px solid black;
+}
+
+.footer-email-text {
+  font-size: 1.2rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: gray;
+}

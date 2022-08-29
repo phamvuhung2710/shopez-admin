@@ -1,0 +1,78 @@
+.cartIcon {
+  height: 40px;
+  width: 40px;
+  background-color: #d1d9d6;
+  display: grid;
+  place-items: center;
+  top: 0;
+  margin-top: -10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+  opacity: 75%;
+}
+
+.cartIcon svg {
+  font-size: 30px;
+}
+
+.cartIcon:hover {
+  background-color: #ff8d2b;
+  opacity: 100%;
+}
+
+.inside-cart {
+  height: 100vh;
+  width: 35vw;
+  background-color: #d9d9d9;
+  margin: 0;
+  float: right;
+  margin-top: 35px;
+  opacity: 90%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -100%;
+  transition: 0.6s ease-out;
+}
+
+.inside-cart.active {
+  right: 0;
+  transition: 0.6 ease-in;
+}
+
+.inside-cart-item {
+  font-size: 25px;
+  text-align: left;
+  margin-top: 15px;
+  list-style-type: none;
+  margin-right: 10px;
+  color: black;
+  padding-bottom: 5px;
+  margin-left: 25px;
+  transition: 0.5s ease;
+}
+
+/* 
+.sidebar-item:hover {
+  box-shadow: inset 170px 0 0 0 #ff8d2b;
+  color: white;
+  height: 35px;
+} */
+
+.inside-cartIcon {
+  left: 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: black;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar-item-icon {
+  margin-right: 15px;
+}

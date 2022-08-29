@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.greeting {
+  height: 100vh;
+}
+
+span {
+  color: #ff8d2b;
+  font-weight: bold;
+}
+
+.greeting-container {
+  height: 100%;
+}
+
+.greeting-text {
+  padding-top: 135px;
+  padding-left: 150px;
+  font-size: 5em;
+  color: #768c85;
+  text-align: left;
+  width: 50%;
+}
+
+.greeting-img {
+  width: 700px;
+  float: right;
+  padding-right: 150px;
+  padding-top: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.greeting-img:hover,
+.greeting-img:focus {
+  transform: translateY(-0.9em);
+  transition-duration: 0.5s;
+}
+
+.greeting-bottom-text {
+  font-size: xx-large;
+  width: 550px;
+  text-align: left;
+  padding-left: 155px;
+  color: #768c85;
+}
+
+.greeting-gray-box {
+  border-bottom: 10px solid #d9d9d9;
+  width: 48px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 155px;
+}
+
+.greeting-button {
+  background-color: #ffa455;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+.greeting-button:hover,
+.greeting-button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #768c85;
+  transform: translateY(-0.25em);
+}

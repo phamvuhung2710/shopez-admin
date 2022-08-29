@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.review {
+  height: 100vh;
+}
+
+.review-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.review-title {
+  padding-top: 50px;
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.review-img {
+  z-index: 5;
+  width: 351px;
+  height: 438px;
+  border-radius: 35px;
+  transition: all 0.25s ease;
+}
+
+.review-line {
+  padding-top: 60px;
+  font-size: large;
+  text-align: center;
+}
+
+.reviewer {
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
