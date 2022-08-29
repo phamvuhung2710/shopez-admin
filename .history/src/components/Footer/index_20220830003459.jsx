@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom'
 function Footer() {
   const handleClickFb = () => {
     const win = window.open(
-      'https://www.facebook.com/profile.php?id=100036790722499',
+      'https://marketplace.axieinfinity.com/login',
       '_blank'
     )
     win.focus()
   }
 
   const handleClickInstagram = () => {
-    const win = window.open(' https://www.instagram.com/dientacong/', '_blank')
+    const win = window.open(
+      'https://marketplace.axieinfinity.com/login',
+      '_blank'
+    )
     win.focus()
   }
 

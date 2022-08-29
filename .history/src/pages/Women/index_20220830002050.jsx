@@ -64,7 +64,6 @@ export function Women() {
               }
               alt="#"
               className="object-cover w-full h-[300px]"
-              onClick={() => navigate(`/women/${product.id}`)}
             />
             <div className="flex items-center justify-between bg-slate-200">
               <p className="pl-2 text-lg font-medium">

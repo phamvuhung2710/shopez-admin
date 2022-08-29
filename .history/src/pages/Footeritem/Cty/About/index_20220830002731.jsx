@@ -3,7 +3,7 @@ import './style.css'
 export function About() {
   return (
     <div
-      className="about-container mt-[120px] mb-[120px] mx-auto text-2xl font-semibold"
+      className="about-container mt-[120px] mb-[120px] mx-auto text-2xl"
       style={{ width: '90vw' }}
     >
       <h1>

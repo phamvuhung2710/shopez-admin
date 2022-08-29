@@ -12,7 +12,10 @@ function Footer() {
   }
 
   const handleClickInstagram = () => {
-    const win = window.open(' https://www.instagram.com/dientacong/', '_blank')
+    const win = window.open(
+      'https://marketplace.axieinfinity.com/login',
+      '_blank'
+    )
     win.focus()
   }
 

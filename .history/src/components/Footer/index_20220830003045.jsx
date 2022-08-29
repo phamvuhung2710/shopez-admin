@@ -3,19 +3,6 @@ import './style.css'
 import { Link } from 'react-router-dom'
 
 function Footer() {
-  const handleClickFb = () => {
-    const win = window.open(
-      'https://www.facebook.com/profile.php?id=100036790722499',
-      '_blank'
-    )
-    win.focus()
-  }
-
-  const handleClickInstagram = () => {
-    const win = window.open(' https://www.instagram.com/dientacong/', '_blank')
-    win.focus()
-  }
-
   return (
     <div className="footer">
       <div className="footer-container">
@@ -64,12 +51,21 @@ function Footer() {
           <div className="footer-email-text">Nhập email của bạn</div>
           <div className="footer-text, footer-email-line"></div>
           <br></br>
-          <div className="footer-text" onClick={handleClickFb}>
+          <Link
+            to={'https://www.facebook.com/profile.php?id=100036790722499'}
+            target="_blank"
+            className="footer-text"
+          >
             FACEBOOK
-          </div>
-          <div className="footer-text" onClick={handleClickInstagram}>
+          </Link>
+          <br />
+          <Link
+            to={'https://www.instagram.com/dientacong/'}
+            target="_blank"
+            className="footer-text"
+          >
             INSTAGRAM
-          </div>
+          </Link>
         </div>
       </div>
     </div>

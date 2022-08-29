@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { baseURL, originalURL } from '../../constants'
-import { addToCart, clearCart, decreaseCart, removeFromCart } from '../../slices/cartSlice'
+import { addToCart, decreaseCart, removeFromCart } from '../../slices/cartSlice'
 import { formatMoney } from '../../utils/helper'
 import axios from 'axios'
 
@@ -132,7 +132,7 @@ export default function Checkout() {
     axios
       .post(`${baseURL}/invoices/invoice_create`, body)
       .then(() => {
-        dispatch(clearCart())
+        dispatch()
         navigate('/payment')
       })
       .catch((error) => console.log(error))

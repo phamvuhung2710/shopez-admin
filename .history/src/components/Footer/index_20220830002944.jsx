@@ -1,21 +1,8 @@
-import React from 'react'
-import './style.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./style.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
-  const handleClickFb = () => {
-    const win = window.open(
-      'https://www.facebook.com/profile.php?id=100036790722499',
-      '_blank'
-    )
-    win.focus()
-  }
-
-  const handleClickInstagram = () => {
-    const win = window.open(' https://www.instagram.com/dientacong/', '_blank')
-    win.focus()
-  }
-
   return (
     <div className="footer">
       <div className="footer-container">
@@ -25,7 +12,7 @@ function Footer() {
             className="footer-text"
             to="/about"
             onClick={() => {
-              window.scrollTo(0, 0)
+              window.scrollTo(0, 0);
             }}
           >
             Giới thiệu về Sho:ez
@@ -36,7 +23,7 @@ function Footer() {
             className="footer-text"
             to="/contact"
             onClick={() => {
-              window.scrollTo(0, 0)
+              window.scrollTo(0, 0);
             }}
           >
             Liên hệ
@@ -50,7 +37,7 @@ function Footer() {
             className="footer-text"
             to="/returnrefund"
             onClick={() => {
-              window.scrollTo(0, 0)
+              window.scrollTo(0, 0);
             }}
           >
             Chính sách đổi &amp; trả hàng
@@ -64,16 +51,12 @@ function Footer() {
           <div className="footer-email-text">Nhập email của bạn</div>
           <div className="footer-text, footer-email-line"></div>
           <br></br>
-          <div className="footer-text" onClick={handleClickFb}>
-            FACEBOOK
-          </div>
-          <div className="footer-text" onClick={handleClickInstagram}>
-            INSTAGRAM
-          </div>
+          <Link className="footer-text">FACEBOOK</Li>
+          <div className="footer-text">INSTAGRAM</div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

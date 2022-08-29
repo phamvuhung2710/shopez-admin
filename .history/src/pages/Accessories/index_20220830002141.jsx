@@ -8,7 +8,7 @@ import { addToCart, getTotals } from '../../slices/cartSlice'
 import { formatMoney } from '../../utils/helper'
 import './style.css'
 
-export function Women() {
+export function Accessories() {
   const navigate = useNavigate()
   const [data, setData] = useState([])
 
@@ -36,7 +36,7 @@ export function Women() {
         .then((res) => {
           setData(
             res?.data?.data?.content?.filter(
-              (item) => item?.category?.name === 'Women'
+              (item) => item?.category?.name === 'Accessories'
             )
           )
         })
@@ -51,7 +51,7 @@ export function Women() {
       className="men-container mt-[60px] mb-[120px] mx-auto"
       style={{ width: '90vw' }}
     >
-      <h1 className="mt-20 mb-12 text-6xl">Women</h1>
+      <h1 className="mt-20 mb-12 text-6xl">Accessory</h1>
       <div className="grid grid-cols-4 gap-x-5 gap-y-8">
         {data?.map((product) => (
           <div className="relative cursor-pointer">
@@ -64,7 +64,6 @@ export function Women() {
               }
               alt="#"
               className="object-cover w-full h-[300px]"
-              onClick={() => navigate(`/women/${product.id}`)}
             />
             <div className="flex items-center justify-between bg-slate-200">
               <p className="pl-2 text-lg font-medium">

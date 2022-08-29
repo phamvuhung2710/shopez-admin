@@ -9,7 +9,7 @@ export function Returnrefund() {
       <h1>
         <br></br>
       </h1>
-      <h1>Chính sách đổi trả hàng:</h1>
+      <h1>Chính sách đổi trả hàng</h1>
       <h3>
         . Chấp nhận đổi hàng trong vòng xx ngày kể từ ngày mua nếu sản phẩm có
         lỗi từ nhà sản xuất
