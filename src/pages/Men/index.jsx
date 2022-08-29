@@ -55,7 +55,7 @@ export function Men() {
       <div className="grid grid-cols-4 gap-x-5 gap-y-8">
         {data?.map((product) => (
           <div className="relative cursor-pointer">
-            <HeroIcon className="absolute z-10 w-8 h-8 cursor-pointer top-2 right-2" />
+            {/* <HeroIcon className="absolute z-10 w-8 h-8 cursor-pointer top-2 right-2" /> */}
             <img
               src={
                 product.imageUrl

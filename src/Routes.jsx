@@ -22,6 +22,9 @@ import ProductDetail from './components/ProductDetail'
 import Checkout from './components/Checkout'
 import Payment from './components/Payment'
 import Purchase from './pages/Purchase/Purchase'
+import { BaoMat } from './pages/Footeritem/Chinhsachkh/Baomat'
+import { BaoHanh } from './pages/Footeritem/Chinhsachkh/Baohanh'
+import { KhachHang } from './pages/Footeritem/Chinhsachkh/Khachhang'
 
 const Wrapper = ({ children }) => {
   const location = useLocation()
@@ -46,6 +49,9 @@ export default function AppRoutes() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="returnrefund" element={<Returnrefund />} />
+          <Route path="baohanh" element={<BaoHanh />} />
+          <Route path="baomat" element={<BaoMat />} />
+          <Route path="khachhang" element={<KhachHang />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="payment" element={<Payment />} />
           <Route path="orders" element={<Purchase />} />

@@ -102,9 +102,9 @@ function Navbar() {
             </div>
           )}
 
-          <div>
+          {/* <div>
             <Favorite />
-          </div>
+          </div> */}
           <Cart />
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

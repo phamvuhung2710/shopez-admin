@@ -45,7 +45,17 @@ function Footer() {
 
         <div className="footer-text-container">
           <div className="footer-title">CHÍNH SÁCH KHÁCH HÀNG</div>
-          <div className="footer-text">Chính sách khách hàng thân thiết</div>
+
+          <Link
+            className="footer-text"
+            to="/khachhang"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
+            Chính sách khách hàng thân thiết
+          </Link>
+          <br />
           <Link
             className="footer-text"
             to="/returnrefund"
@@ -55,14 +65,33 @@ function Footer() {
           >
             Chính sách đổi &amp; trả hàng
           </Link>
-          <div className="footer-text">Chính sách bảo hành</div>
-          <div className="footer-text">Chính sách bảo mật</div>
+          <br />
+          <Link
+            className="footer-text"
+            to="/baohanh"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
+            Chính sách bảo hành
+          </Link>
+          <br />
+          <Link
+            className="footer-text"
+            to="/baomat"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
+            Chính sách bảo mật
+          </Link>
+
         </div>
 
         <div className="footer-text-container">
-          <div className="footer-title">NHẬN THÔNG BÁO TỪ CHÚNG TÔI</div>
+          {/* <div className="footer-title">NHẬN THÔNG BÁO TỪ CHÚNG TÔI</div>
           <div className="footer-email-text">Nhập email của bạn</div>
-          <div className="footer-text, footer-email-line"></div>
+          <div className="footer-text, footer-email-line"></div> */}
           <br></br>
           <div className="footer-text" onClick={handleClickFb}>
             FACEBOOK
