@@ -101,6 +101,10 @@ function Navbar() {
               </Link>
             </div>
           )}
+
+          {/* <div>
+            <Favorite />
+          </div> */}
           <Cart />
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

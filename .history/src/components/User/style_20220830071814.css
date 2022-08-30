@@ -1,6 +1,6 @@
 .userIcon {
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: max-content;
   background-color: #d1d9d6;
   display: grid;
   place-items: center;

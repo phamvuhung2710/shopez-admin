@@ -87,7 +87,7 @@ function Footer() {
           </Link>
         </div>
 
-        <div className="footer-text-container mt-[70px]">
+        <div className="footer-text-container mt-[75px]">
           {/* <div className="footer-title">NHẬN THÔNG BÁO TỪ CHÚNG TÔI</div>
           <div className="footer-email-text">Nhập email của bạn</div>
           <div className="footer-text, footer-email-line"></div> */}
