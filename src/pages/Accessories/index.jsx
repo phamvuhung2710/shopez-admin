@@ -49,12 +49,12 @@ export function Accessories() {
   return (
     <div
       className="men-container mt-[60px] mb-[120px] mx-auto"
-      style={{ width: '90vw' }}
+      style={{ width: '90vw', height: 'auto' }}
     >
       <h1 className="mt-20 mb-12 text-6xl">Accessory</h1>
       <div className="grid grid-cols-4 gap-x-5 gap-y-8">
         {data?.map((product) => (
-          <div className="relative cursor-pointer">
+          <div className="relative cursor-pointer border rounded-md shadow-md">
             {/* <HeroIcon className="absolute z-10 w-8 h-8 cursor-pointer top-2 right-2" /> */}
             <img
               src={
@@ -63,7 +63,7 @@ export function Accessories() {
                   : 'https://phutungnhapkhauchinhhang.com/wp-content/uploads/2020/06/default-thumbnail.jpg'
               }
               alt="#"
-              className="object-cover w-full h-[300px]"
+              className="object-cover w-full h-[300px] rounded-tl-md rounded-tr-md"
               onClick={() => navigate(`/accessories/${product.id}`)}
             />
             <div className="flex items-center justify-between bg-slate-200">
@@ -77,7 +77,7 @@ export function Accessories() {
                 +
               </button>
             </div>
-            <p className="mt-1 font-semibold">{product?.name}</p>
+            <p className="mt-1 font-semibold p-2">{product?.name}</p>
           </div>
         ))}
       </div>
